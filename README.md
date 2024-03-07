@@ -16,7 +16,7 @@ Esta clase no tiene ningún método.
 La guardaremos en el fichero _product.class.js_. Tendrá las siguientes **propiedades**:
   - **id** (number)
   - **name**
-  - **category**: el nº de su categoría
+  - **categoryId**: el nº de su categoría
   - **price**
   - **units**: argumento opcional (si no le pasamos este parámetro al constructor su número por defecto será 0)
   
