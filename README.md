@@ -73,9 +73,9 @@ getProductsByCategory(id: Integer): Product[]
   ```javascript
   addProduct(payload: Object): Product
   ```
-  - **addProduct**: recibe como **único** parámetro **un objeto** con los datos del producto a añadir (propiedades _name_, _category_, _price_ y, opcionalmente, _units_) y devuelve el objeto _Product_ creado. Este método crea un nuevo producto (llamará al constructor de la clase _Product_) y lo añade al almacén. Como a la clase _Product_ hay que pasarle una _id_ haremos una función que la calcule buscando la máxima _id_ de los productos que hay en el almacén (debéis usar un _reduce_) y sumándole 1. Este método genera un error si
+  - **addProduct**: recibe como **único** parámetro **un objeto** con los datos del producto a añadir (propiedades _name_, _categoryId_, _price_ y, opcionalmente, _units_) y devuelve el objeto _Product_ creado. Este método crea un nuevo producto (llamará al constructor de la clase _Product_) y lo añade al almacén. Como a la clase _Product_ hay que pasarle una _id_ haremos una función que la calcule buscando la máxima _id_ de los productos que hay en el almacén (debéis usar un _reduce_) y sumándole 1. Este método genera un error si
     - no se le pasa _name_
-    - no se le pasa _category_ o no existe esa categoría
+    - no se le pasa _categoryId_ o no existe esa categoría
     - no se le pasa _price_ o no es un número positivo
     - se le pasa _units_ pero no es un número entero positivo
 
