@@ -4,8 +4,10 @@ Vamos a dar persistencia a nuestra aplicación. Crearemos la carpeta `repositori
 - **`categoriesRepo.class.js`**: clase para gestionar los datos de la tabla _categories_. La haremos con promesas y no puedes usar `fetch`.Tendremos métodos para:
   -  `getAll()`: obtener todas las categorías
   -  `addItem(item)`: recibe una categoría y la añade a la BBDD
+  -  `editItem(item)`: modifica una categoría
   -  `delItem(id)`: recibe una _id_ y borra de la BBDD esa categoría
 - **`productsRepo.class.js`**: clase para gestionar los datos de la tabla _products_. Deberás utilizar `fetch` y promesas o `async/await`. Tendremos métodos para:
+  -  `getAll()`: obtener todos los productos
   -  `getAllFromCategory(categoryId)`: obtener todos los productos de la categoría pasada
   -  `getById(id)`: obtener el producto con la _id_ pasada
   -  `addItem(item)`: añade un producto
